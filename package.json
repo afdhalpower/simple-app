@@ -1,0 +1,14 @@
+{
+  "name": "simple-app",
+  "version": "1.0.0",
+  "description": "Aplikasi Pencatatan Hasil Bumi",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^3.11.2",
+    "sqlite3": "^5.1.7"
+  }
+}

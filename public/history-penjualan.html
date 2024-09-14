@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Penjualan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/penjualan.html">Penjualan</a></li>
+            <li><a href="/pembelian.html">Pembelian</a></li>
+            <li><a href="/history-pembelian.html">History Pembelian</a></li>
+            <li><a href="/history-penjualan.html">History Penjualan</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>History Penjualan</h1>
+        <div class="filter">
+            <label for="startDate">Dari Tanggal:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">Sampai Tanggal:</label>
+            <input type="date" id="endDate">
+            <button onclick="fetchSales()">Filter</button>
+        </div>
+        <table id="salesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Penerima</th>
+                    <th>Komoditas</th>
+                    <th>Jumlah (kg)</th>
+                    <th>Harga per kg</th>
+                    <th>Total</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan diisi di sini oleh JavaScript -->
+            </tbody>
+        </table>
+        <div class="pagination" id="pagination">
+            <!-- Pagination akan diisi di sini oleh JavaScript -->
+        </div>
+        <div id="totalStats">
+            <!-- Total komoditas akan diisi di sini oleh JavaScript -->
+        </div>
+        <footer>
+            <p>&copy; 2024 Aplikasi Pencatatan Hasil Bumi</p>
+        </footer>
+    </div>
+    <script src="history-penjualan.js"></script>
+</body>
+</html>
